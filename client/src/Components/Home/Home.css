@@ -1,0 +1,43 @@
+.carousel-bg {
+  border-radius: 20px;
+  background-color: #feeae9;
+  box-shadow: 5px 5px 10px lightgray;
+}
+.cetagories {
+  margin-top: 100px;
+}
+.cetagories img {
+  width: 100px;
+}
+.carousel-item {
+  padding: 20px 40px;
+}
+.price {
+  color: #ff448e;
+}
+.button {
+  background-image: linear-gradient(to bottom, #ff589b 0%, #ff136f 100%);
+  color: white;
+  font-weight: 600px;
+}
+
+.card {
+  padding: 10px 20px;
+  /* border: none; */
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+#contact {
+  height: 350px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.gray {
+  color: gray;
+}
+
+button:focus {
+  outline: none;
+}
