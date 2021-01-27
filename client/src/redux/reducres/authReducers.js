@@ -1,4 +1,10 @@
-import { AUTH_ERROR, SIGN_IN, SIGN_OUT, SIGN_UP } from "../actions/authActions";
+import {
+  AUTH_ERROR,
+  AUTH_ERROR2,
+  SIGN_IN,
+  SIGN_OUT,
+  SIGN_UP,
+} from "../actions/authActions";
 
 const initialState = {
   isAuthenticated: false,
@@ -24,7 +30,7 @@ const authReducers = (state = initialState, action) => {
         errorMessage: "",
       };
     case SIGN_OUT:
-      console.log("sign out valled");
+      console.log("sign out called");
       return {
         ...state,
         isAuthenticated: false,
@@ -32,6 +38,12 @@ const authReducers = (state = initialState, action) => {
         errorMessage: "",
       };
     case AUTH_ERROR:
+      return {
+        ...state,
+        isAuthenticated: false,
+        errorMessage: action.payload,
+      };
+    case AUTH_ERROR2:
       return {
         ...state,
         isAuthenticated: false,

@@ -78,11 +78,12 @@ const Signup = (props) => {
                 </div>
               </div>
 
+              {/* <br />
               {currentAuthState.errorMessage ? (
                 <div className="alert alert-danger">
                   {currentAuthState.errorMessage}
                 </div>
-              ) : null}
+              ) : null} */}
 
               <div className="mt-2">
                 <button

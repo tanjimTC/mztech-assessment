@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
+import { PrivateRoute } from "./Components/Hoc/PrivateRoute";
 import Cameras from "./Components/Product/Camera/Cameras";
 import Laptops from "./Components/Product/Laptop/Laptops";
 import Phones from "./Components/Product/Phone/Phones";
@@ -16,9 +17,9 @@ function App() {
           <Route exact path="/">
             <HomeContainer />
           </Route>
-          <Route exact path="/product">
+          <PrivateRoute exact path="/product">
             <ProductContainer />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/account">
             <AccountContainer />
           </Route>

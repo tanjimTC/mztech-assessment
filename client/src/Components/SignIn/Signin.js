@@ -21,6 +21,7 @@ const Signin = (props) => {
       console.log("called", data);
       await signIn(data);
       reset();
+      window.location.reload();
       console.log(currentAuthState);
     } catch (error) {
       console.log(error);
@@ -30,14 +31,6 @@ const Signin = (props) => {
   return (
     <div>
       <div className="container">
-        <div
-          className="alert alert-primary"
-          id="accountAlert"
-          role="alert"
-          style={{ display: "none" }}
-        >
-          logged in successfully!
-        </div>
         <div
           //   style={{ height: "80vh", paddingTop: "15%" }}
           className="row d-flex justify-content-center  "
@@ -74,12 +67,12 @@ const Signin = (props) => {
                   />
                 </div>
               </div>
-
-              {currentAuthState.errorMessage ? (
+              <br />
+              {/* {currentAuthState.errorMessage ? (
                 <div className="alert alert-danger">
                   {currentAuthState.errorMessage}
                 </div>
-              ) : null}
+              ) : null} */}
 
               <div className="mt-2">
                 <button
